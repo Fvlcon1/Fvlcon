@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { Rewind } from 'lucide-react';
+import { Pause } from 'lucide-react';
+import { FastForward } from 'lucide-react';
 
 import {
   Select,
@@ -115,26 +117,45 @@ const page = () => {
             </Select>
     </div>
 
-    
-<div className='mt-[10px] w-full'>
-    <Select>
-              <SelectTrigger className="">
-                <SelectValue placeholder="Personal Profile" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectLabel>Fruits</SelectLabel>
-                  <SelectItem value="apple">Apple</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-    </div>
+  
+  {/*Video control  */}
+<div className='w-full flex mt-4 flex-row'>
+{/* control icons */}
+<div className='w-[40%] bg-[#020817] bg-opacity-70 gap-x-2 backdrop-blur-lg h-[1.5rem]  justify-center text-gray-400 px-2 flex items-center rounded-[15px] '>
+<Rewind size={18}/>
+<Pause size={18}/>
+<FastForward size={18}/>
+</div>
+{/* camera number */}
+<div className='w-[40%] flex flex-row justify-evenly text-gray-400' >
+  <div className='bg-[#020817] bg-opacity-70 w-6 h-6 backdrop-blur-lg text-xs flex items-center justify-center rounded-full' >1</div>
+  <div className='bg-[#020817] bg-opacity-70 w-6 h-6 backdrop-blur-lg text-xs flex items-center justify-center rounded-full' >2</div>
+  <div className='bg-[#020817] bg-opacity-70 w-6 h-6 backdrop-blur-lg text-xs flex items-center justify-center rounded-full' >3</div>
+</div>
 
 
+{/* REC */}
+<div className='w-[15%] bg-[#020817] bg-opacity-70 gap-x-2 backdrop-blur-lg text-xs  text-gray-400 px-2 flex items-center rounded-[15px] '>
+  REC
+</div>
+</div>
+
+{/* speed */}
+<div className='flex text-xs justify-between w-full mt-6 text-gray-400 items-center '>
+<div>
+  Speed
+</div>
+<div>
+  x1
+</div>
+</div>
+
+<div className='w-full bg-[#020817] h-[1.4rem] mt-4 text-xs text-gray-400 py-1 items-center justify-center rounded-[7px] px-3'>
+<p>Camera Links </p>
+</div>
+<div className='bg-[#6a777e] w-full h-[15rem]'>
+
+</div>
         </div>
         <div className='w-[76%] h-full'>
           hell
