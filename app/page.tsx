@@ -1,7 +1,9 @@
 import React from 'react'
 import { Rewind } from 'lucide-react';
-import { Pause } from 'lucide-react';
+import { Pause, Rows3,Video } from 'lucide-react';
 import { FastForward } from 'lucide-react';
+import { ScrollArea } from "@/components/ui/scroll-area"
+
 
 import {
   Select,
@@ -40,7 +42,7 @@ const page = () => {
       {/* main content */}
       <div className='px-4 pb-1 pt-3 h-[95.3%]  w-full flex gap-3 flex-row '>
         {/* left side */}
-        <div className='w-[17%]  h-full'>
+        <div className='w-[17%]  h-full '>
           {/* dropdown */}
           <div className='w-full h-[14px] bg-[#242b35] '>
             <Select>
@@ -153,12 +155,43 @@ const page = () => {
 <div className='w-full bg-[#020817] h-[1.4rem] mt-4 text-xs text-gray-400 py-1 items-center justify-center rounded-[7px] px-3'>
 <p>Camera Links </p>
 </div>
-<div className='bg-[#6a777e] w-full h-[15rem]'>
+<ScrollArea className='bg-[#6a777e]  w-full h-[15rem] mt-[0.5]  '>
+  {/* title */}
+  <div className='flex flex-row items-center'>
+  <Rows3 color="#1d1a26" size={17}/>
+<div className='text-gray-300  text-xs'>Camera list</div>
 
 </div>
+{/* first */}
+<div className='font-thin text-gray-400 flex flex-row items-center text-[10px]'>├──
+  <Video size={17} className='mr-1'/>
+  <h1 className='text-white text-[11px]'>35 Remote Monitoring Capabilities</h1>
+</div>
+{/* second */}
+<div className='font-thin text-gray-400 flex flex-row items-center text-[10px]'>├──
+  <Video size={17} className='mr-1'/>
+  <h1 className='text-white text-[11px]'>35 Remote Monitoring Capabilities</h1>
+</div>
+{/* third */}
+<div className='font-thin text-gray-400 flex flex-row items-center text-[10px]'>├──
+  <Video size={17} className='mr-1'/>
+  <h1 className='text-white text-[11px]'>35 Remote Monitoring Capabilities</h1>
+</div>
+</ScrollArea>
         </div>
-        <div className='w-[76%] h-full'>
-          hell
+        <div className='w-[80vw] h-full'>
+          {/* title */}
+          <div className='w-full h-[20px] bg-[#020817] text-gray-300 text-[11px] flex items-center px-3 rounded-[4px]'>
+            <h1>Fvlcon face detection</h1>
+          </div>
+
+ <div className='grid grid-cols-2 grid-rows-2 gap-0 w-full h-[calc(100vh-40px)]'>
+        <div className='bg-gray-400 border border-black'></div>
+        <div className='bg-gray-400 border border-black'></div>
+        <div className='bg-gray-400 border border-black'></div>
+        <div className='bg-gray-400 border border-black'></div>
+      </div>
+
         </div>
       </div>
     </div>
