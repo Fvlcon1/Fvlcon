@@ -185,7 +185,7 @@ const page = () => {
             <h1>Fvlcon face detection</h1>
           </div>
 
- <div className='grid grid-cols-2 grid-rows-2 gap-0 w-full h-[calc(100vh-40px)]'>
+ <div className='grid grid-cols-2 grid-rows-2 gap-0 w-full h-[94%]'>
         <div className='bg-gray-400 border border-black'></div>
         <div className='bg-gray-400 border border-black'></div>
         <div className='bg-gray-400 border border-black'></div>
