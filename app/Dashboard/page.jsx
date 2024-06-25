@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Rewind, Pause, FastForward, Video, Rows3 } from 'lucide-react';
 import { ScrollArea } from "@/components/ui/scroll-area";
-import userProfiles from './constants';
+import userProfiles from '../constants';
 import {
   Select,
   SelectContent,
@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Clock from "./component1s/Clock"
+import Clock from "../component1s/Clock"
 
 const App = () => {
   const [currentProfileIndex, setCurrentProfileIndex] = useState(0);

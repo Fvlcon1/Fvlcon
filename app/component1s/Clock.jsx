@@ -19,7 +19,7 @@ const Clock = () => {
   };
 
   return (
-    <div className=' bg-black  text-xs text-gray-400 '>
+    <div className=' bg-black   text-gray-400 text-[10px]'>
       {formatTime(time)}
     </div>
   );
