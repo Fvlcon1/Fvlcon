@@ -67,6 +67,37 @@
   
 }
 
+.iconContainer {
+  position: relative;
+}
+
+.icon {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.icon-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+
 /* blinking */
 @keyframes blink {
   0% {
